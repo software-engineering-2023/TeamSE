@@ -1,0 +1,146 @@
+#title{
+  background-color: #171717;
+  background-position: 100%
+}
+#features{
+  padding: 10% 5%;
+  background-color: #444444;
+  position: relative;
+  z-index: 1;
+
+}
+#cta{
+  background-color: #141E61;
+  padding: 13% 5%;
+  text-align: center;
+}
+#footer{
+  background-color: #fff;
+  padding: 7% 7%;
+  text-align: center;
+}
+#cardC{
+  color:black;
+}
+body{
+
+  font-family: Roboto;
+}
+h1{
+  color: white;
+  font-family: Roboto-Serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3{
+  font-family: Roboto-Serif ;
+  font-size: 2.5rem;
+  color: white;
+}
+p{
+  color: #8f8f8f;
+}
+h2{
+  font-family: Montserrat-black;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+h5{
+  color: white;
+  font-family: Roboto-Serif;
+  font-size: 1rem;
+  line-height: 1;
+
+}
+
+/* title-section */
+
+.container-fluid{
+  padding:3% 15% 7%;
+}
+.navbar{
+    padding-bottom: 4.5rem;
+}
+.navbar-brand{
+  font-family: Ubuntu-bold;
+  font-size: 2.5rem;
+}
+.nav-item{
+  padding: 0 18px;
+}
+.downloadingI{
+  width: 20%;
+  top: 50%
+  position:absolute;
+  right: 25%;
+  border: none;
+
+}
+
+/* features-section */
+
+
+#hi{
+  margin: 50px 50px 50px 50px;
+}
+.featurebox{
+  text-align: center;
+}
+.checking{
+  color:#DDDDDD;
+  padding:3%;
+}
+.checking:hover{
+  color: white;
+}
+
+/* testimonial-section */
+
+
+#reminders{
+  background-color: #787A91;
+  text-align: center;
+  color: #fff;
+
+}
+.testI{
+  width: 7%;
+  border-radius: 100%;
+  margin:3px;
+}
+
+/* press-section */
+
+#press{
+  background-color: #787A91;
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+
+
+}
+.pressI{
+  width:15%;
+  margin: 50px 50px 50px 30px;
+
+}
+#pricing{
+  text-align:center;
+  padding:100px;
+}
+@media (max-width:1028px) {
+  #title{
+    text-align: center;
+  }
+  .downloadingI{
+    transform: rotate(0);
+    position: static;
+    width: 40%;
+    padding-top: 3;
+  }
+
+}
+.last{
+  font-family: Montserrat-black;
+}
