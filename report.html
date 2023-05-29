@@ -6,45 +6,50 @@
 
   <title>Banker Home</title>
 
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Roboto+Serif:wght@200&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Roboto+Serif:wght@200&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/87374739dc.js" crossorigin="anonymous"></script>
   <style>
-     .Report{
-        font-size: 3rem; /* Adjust the font size as per your requirements */
-        font-weight: bold; /* Optional: To make the text bold */
-        color: white;
-        text-align: center;
-
+    .Report {
+      font-size: 3rem; /* Adjust the font size as per your requirements */
+      font-weight: bold; /* Optional: To make the text bold */
+      color: white;
+      text-align: center;
     }
-</style>
+    .report-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+    }
+    .form-label {
+      font-weight: bold;
+    }
+    .form-control {
+      margin-bottom: 10px;
+    }
+    .submit-button {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
   <section id="title">
     <div class="container-fluid">
-
-
-
       <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
-
         <a class="navbar-brand navbar-light">Bankena</a>
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <!-- Navigation Bar items -->
@@ -52,34 +57,39 @@
               <a class="nav-link" href="banker.html">Home</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="login.html">Logout</a>
-             </li>
+              <a class="nav-link" href="login.html">Logout</a>
+            </li>
           </ul>
         </div>
       </nav>
-
-
-
       <!-- Title -->
       <div class="row">
         <div class="col-lg-6">
           <h1>Your bank, one touch away.</h1>
-
         </div>
-        <div class="col-lg-6">
-          
-        </div>
+        <div class="col-lg-6"></div>
+      </div>
+    </div>
   </section>
 
-
   <!-- Features -->
-
   <section id="features">
-    <h1 class="Report">Report</h1>
-        <title>Text Area Example</title>
-        <textarea rows=5 cols=150 style="width:100%">
-          Enter your text here...
-        </textarea>
-    </section>
+    <h1 class="Report">Report technical issue</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <form class="report-form">
+            <div class="mb-3">
+              <label for="report-text" class="form-label">Report Details:</label>
+              <textarea id="report-text" class="form-control" rows="5" placeholder="Enter your text here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
-      </html>
+
+</html>
