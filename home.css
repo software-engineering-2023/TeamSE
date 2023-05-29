@@ -2,6 +2,22 @@
   background-color: #171717;
   background-position: 100%
 }
+
+#account-details{
+  padding: 10% 5%;
+  background-color: #444444;
+  position: relative;
+  z-index: 1;
+
+}
+#transactions{
+  padding: 10% 5%;
+  background-color: #444444;
+  position: relative;
+  z-index: 1;
+
+}
+
 #features{
   padding: 10% 5%;
   background-color: #444444;
@@ -9,6 +25,15 @@
   z-index: 1;
 
 }
+#newAcc{
+  padding: 10% 5%;
+  background-color: #444444;
+  position: relative;
+  z-index: 1;
+    text-align: center;
+
+}
+
 #cta{
   background-color: #141E61;
   padding: 13% 5%;
@@ -144,4 +169,9 @@ h5{
 .last{
   font-family: Montserrat-black;
 }
-
+.det{
+  color:white;
+}
+.table-bordered{
+    color:white;
+}

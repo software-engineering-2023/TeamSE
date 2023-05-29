@@ -3,41 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-
-  <title>Banker Home</title>
-
+  <title>Credit Card Transactions</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Roboto+Serif:wght@200&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/87374739dc.js" crossorigin="anonymous"></script>
-  <style>
-    .Report {
-      font-size: 3rem; /* Adjust the font size as per your requirements */
-      font-weight: bold; /* Optional: To make the text bold */
-      color: white;
-      text-align: center;
-    }
-    .report-form {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #f8f9fa;
-      border-radius: 5px;
-    }
-    .form-label {
-      font-weight: bold;
-    }
-    .form-control {
-      margin-bottom: 10px;
-    }
-    .submit-button {
-      margin-top: 20px;
-    }
-  </style>
 </head>
 
 <body>
@@ -57,39 +33,70 @@
               <a class="nav-link" href="banker.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html">Logout</a>
-            </li>
+               <a class="nav-link" href="login.html">Logout</a>
+             </li>
           </ul>
         </div>
       </nav>
       <!-- Title -->
       <div class="row">
         <div class="col-lg-6">
-          <h1>Your bank, one touch away.</h1>
+          <h1>Credit Card Transactions</h1>
         </div>
-        <div class="col-lg-6"></div>
+        <div class="col-lg-6">
+          
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Features -->
-  <section id="features">
-    <h1 class="Report">Report technical issue</h1>
+  <!-- Transactions Table -->
+  <section id="transactions">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 mx-auto">
-          <form class="report-form">
-            <div class="mb-3">
-              <label for="report-text" class="form-label">Report Details:</label>
-              <textarea id="report-text" class="form-control" rows="5" placeholder="Enter your text here..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary submit-button">Submit</button>
-          </form>
+        <div class="col-lg-10 offset-lg-1">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Merchant</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023-05-28</td>
+                <td>Amazon</td>
+                <td>$50.00</td>
+              </tr>
+              <tr>
+                <td>2023-05-26</td>
+                <td>Netflix</td>
+                <td>$15.00</td>
+              </tr>
+              <tr>
+                <td>2023-05-24</td>
+                <td>Starbucks</td>
+                <td>$6.00</td>
+              </tr>
+              <!-- Add more rows for additional transactions -->
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer id="footer">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-solid fa-envelope"></i>
+    <p>&copy; 2023 Bankena</p>
+  </footer>
+
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>

@@ -40,10 +40,7 @@
           <ul class="navbar-nav ms-auto">
             <!-- Navigation Bar items -->
             <li class="nav-item">
-              <a class="nav-link" href="">Logout</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="">Contact us</a>
+              <a class="nav-link" href="login.html">Logout</a>
             </li>
           </ul>
         </div>
@@ -58,7 +55,7 @@
 
         </div>
         <div class="col-lg-6">
-          <img class="downloadingI " src="images/logo1.png" alt="logo">
+
         </div>
 
 
@@ -79,42 +76,74 @@
         <i class="fa-solid fa-circle-check fa-4x checking"></i>
         <h3>Account Request</h3>
         <p> </p>
-        <button type="button" class="btn btn-dark" > review</button>
+        <button type="button" class="btn btn-dark" onclick="redirectToAccountRequest()">Review</button>
+
+<script>
+  function redirectToAccountRequest() {
+    window.location.href = "AccountRequest.html";
+  }
+</script>
 
       </div>
+
       <div class=" featurebox col-lg-4">
 
         <i class="fa-solid fa-circle-check fa-4x checking"></i>
-        <h3>Open or Close Client Accounts</h3>
+        <h3>Open Account to a new client </h3>
         <p> </p>
-        <button type="button" class="btn btn-dark" > Go</button>
+        <button type="button" class="btn btn-dark" onclick="redirectToOpenAccount()" > Go</button>
+        <script>
+          function redirectToOpenAccount() {
+            window.location.href = "OpenAccount.html";
+          }
+        </script>
 
       </div>
         <div class=" featurebox col-lg-4">
 
         <i class="fa-solid fa-circle-check fa-4x checking"></i>
-        <h3>Card Requests</h3>
+        <h3>Close Account by Account number</h3>
         <p> </p>
-        <button type="button" class="btn btn-dark" > review</button>
+        <button type="button" class="btn btn-dark" onclick="redirectToCloseAccount()"> Go</button>
+        <script>
+          function redirectToCloseAccount() {
+            window.location.href = "CloseAccount.html";
+          }
+        </script>
 
       </div>
       <div class="featurebox col-lg-4">
         <i class="fa-solid fa-bullseye fa-4x checking"></i>
         <h3>Credit Card Requests</h3>
         <p></p>
-        <button type="button" class="btn btn-dark" > review</button>
+        <button type="button" class="btn btn-dark" onclick="redirectToCreditCardRequests()" > review</button>
+        <script>
+          function redirectToCreditCardRequests() {
+            window.location.href = "CreditCardRequests.html";
+          }
+        </script>
       </div>
       <div class="featurebox col-lg-4">
         <i class="fa-solid fa-bullseye fa-4x checking"></i>
         <h3>Transcation Requests</h3>
         <p></p>
-        <button type="button" class="btn btn-dark" > review</button>
+        <button type="button" class="btn btn-dark"  onclick="redirectToTransactionRequests()" > review</button>
+        <script>
+          function redirectToTransactionRequests() {
+            window.location.href = "TransactionRequests.html";
+          }
+        </script>
       </div>
       <div class="featurebox col-lg-4">
         <i class="fa-solid fa-heart fa-4x checking"></i>
         <h3>Loans Requests</h3>
         <p></p>
-        <button type="button" class="btn btn-dark" > review</button>
+        <button type="button" class="btn btn-dark" onclick="redirectToLoanRequests()" > review</button>
+        <script>
+          function redirectToLoanRequests() {
+            window.location.href = "LoanRequests.html";
+          }
+        </script>
       </div>
     </div>
   </section>
@@ -157,12 +186,26 @@
   <section id="press">
     <h3 class:"last">Client Serivces </h3>
 
-      <button id="hi" type="button" class="btn btn-dark">Make transfer  </button>
-      <button id="hi" type="button" class="btn btn-dark">Apply for a loan </button>
-      <button id="hi" type="button" class="btn btn-dark">Apply for a credit card  </button>
-      <button id="hi" type="button" class="btn btn-dark">Set reminders </button>
-      <button id="hi" type="button" class="btn btn-dark">Make a payment  </button>
-      <button id="hi" type="button" class="btn btn-dark">Redeem Points for cashback  </button>
+      <button id="hi" type="button" class="btn btn-dark" onclick="redirectToMakeTransfer()">Make transfer   </button>
+      <script>
+        function redirectToMakeTransfer() {
+          window.location.href = "MakeTransfer.html";
+        }
+      </script>
+
+      <button id="hi" type="button" class="btn btn-dark" onclick="redirectToapplyLoan()">Apply for a loan </button>
+      <script>
+        function redirectToapplyLoan() {
+          window.location.href = "applyLoan.html";
+        }
+      </script>
+
+      <button id="hi" type="button" class="btn btn-dark" onclick="redirectToapplyCards()">Apply for a credit card  </button>
+      <script>
+        function redirectToapplyCards() {
+          window.location.href = "applyCards.html";
+        }
+      </script>
 
 
   </section>
@@ -171,124 +214,156 @@
   <!-- Pricing -->
 
   <section id="pricing">
-
     <h3 class="nav-link" style="color: black; font-size: 70px;">History</h3>
-
-    <p>View Past Action </p>
-
-
+    <p>View Past Actions</p>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h3 id="cardC" class="my-0 fw-normal">Account Transcations</h3>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title"></small></h1>
-                <h2></h2>
-                <p></p>
-                <p></p>
-
-
-                <button type="button" class="w-100 btn btn-lg btn-outline-dark">View</button>
-                
-              </div>
-            </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h3 id="cardC" class="my-0 fw-normal">Account Transactions</h3>
           </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h3 id="cardC" class="my-0 fw-normal">Pill Payment </h3>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"></h1>
+            <h2></h2>
+            <p></p>
+            <p></p>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="accountNumberAT" placeholder="Enter account number" required pattern="[0-9]+">
               </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title"></small></h1>
-                <h2></h2>
-                <p></p>
-                <p></p>
-
-
-                <button type="button" class="w-100 btn btn-lg btn-outline-dark">View</button>
-                
-              </div>
-            </div>
+              <button type="button" class="w-100 btn btn-lg btn-outline-dark" onclick="viewAccountTransactions()">View</button>
+              <script>
+                function viewAccountTransactions() {
+                  window.location.href = "AccountTransactions.html";
+                }
+              </script>
+            </form>
           </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h3 id="cardC" class="my-0 fw-normal">Credit Card Points </h3>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title"></small></h1>
-                <h2></h2>
-                <p></p>
-                <p></p>
-
-
-                <button type="button" class="w-100 btn btn-lg btn-outline-dark">View</button>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h3 id="cardC" class="my-0 fw-normal">Account Transcations</h3>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title"></small></h1>
-                <h2></h2>
-                <p></p>
-                <p></p>
-
-
-                <button type="button" class="w-100 btn btn-lg btn-outline-dark">View</button>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h3 id="cardC" class="my-0 fw-normal">Credit Card Transcations</h3>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title"></small></h1>
-                <h2></h2>
-                <p></p>
-                <p></p>
-
-
-                <button type="button" class="w-100 btn btn-lg btn-outline-dark">View</button>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h3 id="cardC" class="my-0 fw-normal">Pill Payment</h3>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title"></small></h1>
-                <h2></h2>
-                <p></p>
-                <p></p>
-
-
-                <button type="button" class="w-100 btn btn-lg btn-outline-dark">View</button>
-                
-              </div>
-            </div>
-          </div>
-         
-          </div>
-          
         </div>
-
-
-
-
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h3 id="cardC" class="my-0 fw-normal">Bill Payments</h3>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"></h1>
+            <h2></h2>
+            <p></p>
+            <p></p>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="accountNumberPP" placeholder="Enter account number" required pattern="[0-9]+">
+              </div>
+              <button type="button" class="w-100 btn btn-lg btn-outline-dark" onclick="viewPillPayments()">View</button>
+              <script>
+                function viewPillPayments() {
+                  window.location.href = "pillPaymentHistory.html";
+                }
+              </script>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h3 id="cardC" class="my-0 fw-normal">Credit Card Points</h3>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"></h1>
+            <h2></h2>
+            <p></p>
+            <p></p>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="cardNumberCCP" placeholder="Enter card number" required pattern="[0-9]+">
+              </div>
+              <button type="button" class="w-100 btn btn-lg btn-outline-dark" onclick="viewCreditCardPoints()">View</button>
+              <script>
+                function viewCreditCardPoints() {
+                  window.location.href = "CreditCardPoints.html";
+                }
+              </script>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h3 id="cardC" class="my-0 fw-normal">Loan Details</h3>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"></h1>
+            <h2></h2>
+            <p></p>
+            <p></p>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="cardNumberLD" placeholder="Enter account number" required pattern="[0-9]+">
+              </div>
+              <button type="button" class="w-100 btn btn-lg btn-outline-dark" onclick="viewLoanDetails()">View</button>
+              <script>
+                function viewLoanDetails() {
+                  window.location.href = "LoanDetails.html";
+                }
+              </script>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h3 id="cardC" class="my-0 fw-normal">Credit Card Transactions</h3>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"></h1>
+            <h2></h2>
+            <p></p>
+            <p></p>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="cardNumberCCT" placeholder="Enter card number" required pattern="[0-9]+">
+              </div>
+              <button type="button" class="w-100 btn btn-lg btn-outline-dark" onclick="viewCreditCardTransactions()">View</button>
+              <script>
+                function viewCreditCardTransactions() {
+                  window.location.href = "CreditCardTransaction.html";
+                }
+              </script>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h3 id="cardC" class="my-0 fw-normal">Account Details</h3>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"></h1>
+            <h2></h2>
+            <p></p>
+            <p></p>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="accountNumberAD" placeholder="Enter account number" required pattern="[0-9]+">
+              </div>
+              <button type="button" class="w-100 btn btn-lg btn-outline-dark" onclick="viewAccountDetails()">View</button>
+              <script>
+                function viewAccountDetails() {
+                  window.location.href = "AcountDetails.html";
+                }
+              </script>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
 
 
   <!-- Call to Action -->
@@ -296,9 +371,18 @@
   <section id="cta">
 
     <h3 class:"last">Reports</h3>
-    <button type="button" class="btn btn-lg btn-dark">Report technical issue</button>
-    <button type="button" class="btn btn-lg btn-dark">Report credit card Loss or damage or theft </button>
-
+    <button type="button" class="btn btn-lg btn-dark" onclick="redirectToReportCard()">Report technical issue to admin system</button>
+    <script>
+      function redirectToReportCard() {
+        window.location.href = "report.html";
+      }
+    </script>
+    <button type="button" class="btn btn-lg btn-dark" onclick="redirectToHandleCreditCardReports()">Handle CreditCard Reports</button>
+    <script>
+      function redirectToHandleCreditCardReports() {
+        window.location.href = "CreditCardReports.html";
+      }
+    </script>
   </section>
 
 

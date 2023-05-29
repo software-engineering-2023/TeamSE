@@ -7,7 +7,7 @@ function checkCondition(){
   }else if (username=== "banker") {
       window.location = 'banker.html';
   }else if (username=== "admin") {
-    window.location= admin.html;
+    window.location= 'admin.html';
 
   }else{
     alert("wrong username");
