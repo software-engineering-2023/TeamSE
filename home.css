@@ -96,7 +96,7 @@ h5{
 }
 .downloadingI{
   width: 20%;
-  top: 50%
+  top: 50%;
   position:absolute;
   right: 25%;
   border: none;
@@ -174,4 +174,22 @@ h5{
 }
 .table-bordered{
     color:white;
+}
+label {
+  color: white;
+}
+.report-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+.report-title {
+  margin-bottom: 10px;
+}
+.report-info {
+  margin-bottom: 5px;
+}
+.handle-case-button {
+  margin-top: 10px;
 }
